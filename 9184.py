@@ -42,10 +42,10 @@ def answer(a, b, c):
         return 1
 
     elif a > 20 or b > 20 or c > 20:
-        return sheet(20, 20, 20)
+        return sheet[20][20][20]
 
     else:
-        return sheet(a, b, c)
+        return sheet[a][b][c]
 
 for (a, b, c) in queryList:
-    print(a, b, c, answer(a, b, c))
+    print("w({}, {}, {}) = {}".format(a, b, c, answer(a, b, c)))
